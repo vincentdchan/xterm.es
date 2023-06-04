@@ -7,7 +7,7 @@ import { ICharacterJoinerService, ICharSizeService, ICoreBrowserService, IRender
 import { IColorSet, ITerminal } from 'browser/Types';
 import { CanvasRenderer } from './CanvasRenderer';
 import { IBufferService, ICoreService, IDecorationService, IOptionsService } from 'common/services/Services';
-import { ITerminalAddon, Terminal } from 'xterm';
+import { ITerminalAddon, Terminal } from 'xterm.es';
 import { EventEmitter, forwardEvent } from 'common/EventEmitter';
 import { Disposable, toDisposable } from 'common/Lifecycle';
 

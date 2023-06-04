@@ -5,7 +5,7 @@
  * (EXPERIMENTAL) This Addon is still under development
  */
 
-import { Terminal, ITerminalAddon, IBuffer, IBufferCell, IBufferRange } from 'xterm';
+import { Terminal, ITerminalAddon, IBuffer, IBufferCell, IBufferRange } from 'xterm.es';
 import { IColorSet } from 'browser/Types';
 import { IAttributeData } from 'common/Types';
 

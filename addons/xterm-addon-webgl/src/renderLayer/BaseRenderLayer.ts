@@ -5,7 +5,7 @@
 
 import { IRenderLayer } from './Types';
 import { acquireTextureAtlas } from 'browser/renderer/shared/CharAtlasCache';
-import { Terminal } from 'xterm';
+import { Terminal } from 'xterm.es';
 import { IColorSet, ReadonlyColorSet } from 'browser/Types';
 import { TEXT_BASELINE } from 'browser/renderer/shared/Constants';
 import { ICoreBrowserService, IThemeService } from 'browser/services/Services';

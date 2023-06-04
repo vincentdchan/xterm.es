@@ -9,7 +9,7 @@ import { EventEmitter, forwardEvent } from 'common/EventEmitter';
 import { Disposable, toDisposable } from 'common/Lifecycle';
 import { getSafariVersion, isSafari } from 'common/Platform';
 import { ICoreService, IDecorationService, IOptionsService } from 'common/services/Services';
-import { ITerminalAddon, Terminal } from 'xterm';
+import { ITerminalAddon, Terminal } from 'xterm.es';
 import { WebglRenderer } from './WebglRenderer';
 
 export class WebglAddon extends Disposable implements ITerminalAddon {

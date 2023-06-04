@@ -1,5 +1,5 @@
 {
-  "name": "xterm-addon-web-links",
+  "name": "xterm-addon-web-links.es",
   "version": "0.8.0",
   "author": {
     "name": "The xterm.js authors",
@@ -17,10 +17,10 @@
   "scripts": {
     "build": "../../node_modules/.bin/tsc -p .",
     "prepackage": "npm run build",
-    "package": "../../node_modules/.bin/webpack",
+    "package": "../../node_modules/.bin/rollup -c rollup.config.mjs",
     "prepublishOnly": "npm run package"
   },
   "peerDependencies": {
-    "xterm": "^5.0.0"
+    "xterm.es": "^5.0.0"
   }
 }

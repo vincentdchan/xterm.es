@@ -5,7 +5,7 @@
 
 import { assert } from 'chai';
 import { Browser, Page } from 'playwright';
-import { ITheme } from 'xterm';
+import { ITheme } from 'xterm.es';
 import { getBrowserType, launchBrowser, openTerminal, pollFor, timeout, writeSync } from '../../../out-test/api/TestUtils';
 import { ITerminalOptions } from '../../../src/common/Types';
 

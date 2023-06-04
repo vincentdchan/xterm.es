@@ -3,7 +3,7 @@
  * @license MIT
  */
 
-import { Terminal } from 'xterm';
+import { Terminal } from 'xterm.es';
 import { enableLigatures } from '.';
 import { ILigatureOptions } from './Types';
 

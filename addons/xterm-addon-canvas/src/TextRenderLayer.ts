@@ -15,7 +15,7 @@ import { IOptionsService, IBufferService, IDecorationService } from 'common/serv
 import { ICharacterJoinerService, ICoreBrowserService, IThemeService } from 'browser/services/Services';
 import { JoinedCellData } from 'browser/services/CharacterJoinerService';
 import { color, css } from 'common/Color';
-import { Terminal } from 'xterm';
+import { Terminal } from 'xterm.es';
 
 /**
  * This CharData looks like a null character, which will forc a clear and render

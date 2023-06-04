@@ -6,7 +6,7 @@
 import { createProgram, expandFloat32Array, PROJECTION_MATRIX } from './WebglUtils';
 import { IRenderModel, IWebGLVertexArrayObject, IWebGL2RenderingContext } from './Types';
 import { Attributes, BgFlags, FgFlags } from 'common/buffer/Constants';
-import { Terminal } from 'xterm';
+import { Terminal } from 'xterm.es';
 import { IColor } from 'common/Types';
 import { IColorSet, ReadonlyColorSet } from 'browser/Types';
 import { IRenderDimensions } from 'browser/renderer/shared/Types';

@@ -10,7 +10,7 @@ import { ICoreBrowserService, IThemeService } from 'browser/services/Services';
 import { IColorSet, ILinkifierEvent, ILinkifier2, ReadonlyColorSet } from 'browser/Types';
 import { IBufferService, IDecorationService, IOptionsService } from 'common/services/Services';
 import { is256Color } from 'browser/renderer/shared/CharAtlasUtils';
-import { Terminal } from 'xterm';
+import { Terminal } from 'xterm.es';
 
 export class LinkRenderLayer extends BaseRenderLayer {
   private _state: ILinkifierEvent | undefined;

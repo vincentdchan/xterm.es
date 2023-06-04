@@ -3,7 +3,7 @@
  * @license MIT
  */
 
-import { IUnicodeVersionProvider } from 'xterm';
+import { IUnicodeVersionProvider } from 'xterm.es';
 
 type CharWidth = 0 | 1 | 2;
 

@@ -4,9 +4,9 @@
  */
 
 
-import { Terminal, ITerminalAddon, IViewportRange } from 'xterm';
+import { Terminal, ITerminalAddon, IViewportRange } from 'xterm.es';
 
-declare module 'xterm-addon-web-links' {
+declare module 'xterm-addon-web-links.es' {
   /**
    * An xterm.js addon that enables web links.
    */

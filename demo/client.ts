@@ -33,7 +33,7 @@ import { LigaturesAddon } from '../addons/xterm-addon-ligatures/out/LigaturesAdd
 
 // Pulling in the module's types relies on the <reference> above, it's looks a
 // little weird here as we're importing "this" module
-import { Terminal as TerminalType, ITerminalOptions } from 'xterm';
+import { Terminal as TerminalType, ITerminalOptions } from 'xterm.es';
 
 export interface IWindowWithTerminal extends Window {
   term: TerminalType;

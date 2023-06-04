@@ -3,7 +3,7 @@
  * @license MIT
  */
 
-import { Terminal, IDisposable, ITerminalAddon, IBufferRange, IDecoration } from 'xterm';
+import { Terminal, IDisposable, ITerminalAddon, IBufferRange, IDecoration } from 'xterm.es';
 import { EventEmitter } from 'common/EventEmitter';
 import { Disposable, toDisposable } from 'common/Lifecycle';
 

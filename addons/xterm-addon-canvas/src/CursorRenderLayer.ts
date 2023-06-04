@@ -11,7 +11,7 @@ import { IColorSet, ReadonlyColorSet } from 'browser/Types';
 import { IBufferService, IOptionsService, ICoreService, IDecorationService } from 'common/services/Services';
 import { IEventEmitter } from 'common/EventEmitter';
 import { ICoreBrowserService, IThemeService } from 'browser/services/Services';
-import { Terminal } from 'xterm';
+import { Terminal } from 'xterm.es';
 import { toDisposable } from 'common/Lifecycle';
 
 interface ICursorState {

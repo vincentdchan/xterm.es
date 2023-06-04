@@ -3,7 +3,7 @@
  * @license MIT
  */
 
-import { IDecorationOptions, IDecoration, IDisposable, IMarker } from 'xterm';
+import { IDecorationOptions, IDecoration, IDisposable, IMarker } from 'xterm.es';
 import { IEvent } from 'common/EventEmitter';
 import { ICoreTerminal, CharData, ITerminalOptions, IColor } from 'common/Types';
 import { IMouseService, IRenderService } from './services/Services';

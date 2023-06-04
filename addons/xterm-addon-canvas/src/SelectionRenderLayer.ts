@@ -8,7 +8,7 @@ import { BaseRenderLayer } from './BaseRenderLayer';
 import { IColorSet, ReadonlyColorSet } from 'browser/Types';
 import { IBufferService, IDecorationService, IOptionsService } from 'common/services/Services';
 import { ICoreBrowserService, IThemeService } from 'browser/services/Services';
-import { Terminal } from 'xterm';
+import { Terminal } from 'xterm.es';
 
 interface ISelectionState {
   start?: [number, number];

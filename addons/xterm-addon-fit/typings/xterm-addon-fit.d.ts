@@ -3,9 +3,9 @@
  * @license MIT
  */
 
-import { Terminal, ITerminalAddon } from 'xterm';
+import { Terminal, ITerminalAddon } from 'xterm.es';
 
-declare module 'xterm-addon-fit' {
+declare module 'xterm-addon-fit.es' {
   /**
    * An xterm.js addon that enables resizing the terminal to the dimensions of
    * its containing element.

@@ -19,7 +19,7 @@ import { EventEmitter, forwardEvent } from 'common/EventEmitter';
 import { Disposable, getDisposeArrayDisposable, toDisposable } from 'common/Lifecycle';
 import { ICoreService, IDecorationService, IOptionsService } from 'common/services/Services';
 import { CharData, IBufferLine, ICellData } from 'common/Types';
-import { IDisposable, Terminal } from 'xterm';
+import { IDisposable, Terminal } from 'xterm.es';
 import { GlyphRenderer } from './GlyphRenderer';
 import { RectangleRenderer } from './RectangleRenderer';
 import { CursorRenderLayer } from './renderLayer/CursorRenderLayer';

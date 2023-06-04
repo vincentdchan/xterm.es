@@ -12,7 +12,7 @@ import { ILinkifier2 } from 'browser/Types';
 import { EventEmitter, forwardEvent } from 'common/EventEmitter';
 import { Disposable, toDisposable } from 'common/Lifecycle';
 import { IBufferService, ICoreService, IDecorationService, IOptionsService } from 'common/services/Services';
-import { Terminal } from 'xterm';
+import { Terminal } from 'xterm.es';
 import { CursorRenderLayer } from './CursorRenderLayer';
 import { LinkRenderLayer } from './LinkRenderLayer';
 import { SelectionRenderLayer } from './SelectionRenderLayer';

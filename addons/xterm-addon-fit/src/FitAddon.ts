@@ -3,7 +3,7 @@
  * @license MIT
  */
 
-import { Terminal, ITerminalAddon } from 'xterm';
+import { Terminal, ITerminalAddon } from 'xterm.es';
 import { IRenderDimensions } from 'browser/renderer/shared/Types';
 
 interface ITerminalDimensions {

@@ -3,9 +3,9 @@
  * @license MIT
  */
 
-import { Terminal, ITerminalAddon, IEvent } from 'xterm';
+import { Terminal, ITerminalAddon, IEvent } from 'xterm.es';
 
-declare module 'xterm-addon-webgl' {
+declare module 'xterm-addon-webgl.es' {
   /**
    * An xterm.js addon that provides search functionality.
    */

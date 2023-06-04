@@ -5,7 +5,7 @@
 
 import * as playwright from 'playwright';
 import deepEqual = require('deep-equal');
-import { ITerminalInitOnlyOptions, ITerminalOptions } from 'xterm';
+import { ITerminalInitOnlyOptions, ITerminalOptions } from 'xterm.es';
 import { deepStrictEqual, fail } from 'assert';
 
 export async function pollFor<T>(page: playwright.Page, evalOrFn: string | (() => Promise<T>), val: T, preFn?: () => Promise<void>, maxDuration?: number): Promise<void> {

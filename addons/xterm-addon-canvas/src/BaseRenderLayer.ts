@@ -16,7 +16,7 @@ import { CellData } from 'common/buffer/CellData';
 import { WHITESPACE_CELL_CODE } from 'common/buffer/Constants';
 import { IBufferService, IDecorationService, IOptionsService } from 'common/services/Services';
 import { ICellData, IDisposable } from 'common/Types';
-import { Terminal } from 'xterm';
+import { Terminal } from 'xterm.es';
 import { IRenderLayer } from './Types';
 import { CellColorResolver } from 'browser/renderer/shared/CellColorResolver';
 import { Disposable, toDisposable } from 'common/Lifecycle';
