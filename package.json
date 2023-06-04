@@ -1,5 +1,5 @@
 {
-  "name": "xterm",
+  "name": "xterm.es",
   "description": "Full xterm terminal, in your browser",
   "version": "5.1.0",
   "main": "lib/xterm.js",
@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "prepackage": "npm run build",
-    "package": "webpack",
+    "package": "rollup -c rollup.config.mjs",
     "package-headless": "webpack --config ./webpack.config.headless.js",
     "postpackage-headless": "node ./bin/package_headless.js",
     "start": "node demo/start",
@@ -52,6 +52,9 @@
     "vtfeatures": "node bin/extract_vtfeatures.js src/**/*.ts src/*.ts"
   },
   "devDependencies": {
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
     "@types/chai": "^4.2.22",
     "@types/debug": "^4.1.7",
     "@types/deep-equal": "^1.0.1",
@@ -78,6 +81,9 @@
     "node-pty": "^0.10.1",
     "nyc": "^15.1.0",
     "playwright": "^1.22.1",
+    "rollup": "^3.23.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
     "source-map-loader": "^3.0.0",
     "source-map-support": "^0.5.20",
     "ts-loader": "^9.3.1",

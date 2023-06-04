@@ -851,6 +851,8 @@ declare module 'xterm' {
      */
     onTitleChange: IEvent<string>;
 
+    onCurrentDirectoryChange: IEvent<string>;
+
     /**
      * Unfocus the terminal.
      */
