@@ -121,6 +121,7 @@ export class InputHandler extends Disposable implements IInputHandler {
   private _workCell: CellData = new CellData();
   private _windowTitle = '';
   private _iconName = '';
+  private _currentDirectory = '';
   private _dirtyRowTracker: IDirtyRowTracker;
   protected _windowTitleStack: string[] = [];
   protected _iconNameStack: string[] = [];
@@ -156,6 +157,8 @@ export class InputHandler extends Disposable implements IInputHandler {
   public readonly onScroll = this._onScroll.event;
   private readonly _onTitleChange = this.register(new EventEmitter<string>());
   public readonly onTitleChange = this._onTitleChange.event;
+  private readonly _onCurrentDirectoryChange = this.register(new EventEmitter<string>());
+  public readonly onCurrentDirectoryChange = this._onCurrentDirectoryChange.event;
   private readonly _onColor = this.register(new EventEmitter<IColorEvent>());
   public readonly onColor = this._onColor.event;
 
@@ -300,6 +303,7 @@ export class InputHandler extends Disposable implements IInputHandler {
     //   5 - Change Special Color Number
     //   6 - Enable/disable Special Color Number c
     //   7 - current directory? (not in xterm spec, see https://gitlab.com/gnachman/iterm2/issues/3939)
+    this._parser.registerOscHandler(7, new OscHandler(data => this.setCurrentDirectory(data)));
     //   8 - create hyperlink (not in xterm spec, see https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda)
     this._parser.registerOscHandler(8, new OscHandler(data => this.setHyperlink(data)));
     //  10 - Change VT100 text foreground color to Pt.
@@ -2869,6 +2873,13 @@ export class InputHandler extends Disposable implements IInputHandler {
   public setTitle(data: string): boolean {
     this._windowTitle = data;
     this._onTitleChange.fire(data);
+    return true;
+  }
+
+  public setCurrentDirectory(data: string): boolean {
+    this._currentDirectory = data;
+    this._onCurrentDirectoryChange.fire(data);
+    console.log("set current dir:", data);
     return true;
   }
 

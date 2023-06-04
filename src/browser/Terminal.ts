@@ -132,6 +132,8 @@ export class Terminal extends CoreTerminal implements ITerminal {
   public readonly onSelectionChange = this._onSelectionChange.event;
   private readonly _onTitleChange = this.register(new EventEmitter<string>());
   public readonly onTitleChange = this._onTitleChange.event;
+  private readonly _onCurrentDirectoryChange = this.register(new EventEmitter<string>());
+  public readonly onCurrentDirectoryChange = this._onCurrentDirectoryChange.event;
   private readonly _onBell = this.register(new EventEmitter<void>());
   public readonly onBell = this._onBell.event;
 
@@ -179,6 +181,7 @@ export class Terminal extends CoreTerminal implements ITerminal {
     this.register(this._inputHandler.onColor((event) => this._handleColorEvent(event)));
     this.register(forwardEvent(this._inputHandler.onCursorMove, this._onCursorMove));
     this.register(forwardEvent(this._inputHandler.onTitleChange, this._onTitleChange));
+    this.register(forwardEvent(this._inputHandler.onCurrentDirectoryChange, this._onCurrentDirectoryChange));
     this.register(forwardEvent(this._inputHandler.onA11yChar, this._onA11yCharEmitter));
     this.register(forwardEvent(this._inputHandler.onA11yTab, this._onA11yTabEmitter));
 

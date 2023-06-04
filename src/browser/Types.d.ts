@@ -46,6 +46,7 @@ export interface IPublicTerminal extends IDisposable {
   onResize: IEvent<{ cols: number, rows: number }>;
   onWriteParsed: IEvent<void>;
   onTitleChange: IEvent<string>;
+  onCurrentDirectoryChange: IEvent<string>;
   onBell: IEvent<void>;
   blur(): void;
   focus(): void;
