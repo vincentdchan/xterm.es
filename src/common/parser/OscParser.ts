@@ -117,7 +117,6 @@ export class OscParser implements IOscParser {
           this._id = 0;
         }
         this._id = this._id * 10 + code - 48;
-        console.log("handle osc id:", this._id);
       }
     }
     if (this._state === OscState.PAYLOAD && end - start > 0) {

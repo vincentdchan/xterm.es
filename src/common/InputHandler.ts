@@ -2879,7 +2879,6 @@ export class InputHandler extends Disposable implements IInputHandler {
   public setCurrentDirectory(data: string): boolean {
     this._currentDirectory = data;
     this._onCurrentDirectoryChange.fire(data);
-    console.log("set current dir:", data);
     return true;
   }
 
