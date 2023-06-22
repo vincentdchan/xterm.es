@@ -5,7 +5,7 @@
 
 import { Terminal, ITerminalAddon, IEvent } from 'xterm.es';
 
-declare module 'xterm-addon-search' {
+declare module 'xterm-addon-search.es' {
   /**
    * Options for a search.
    */
